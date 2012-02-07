@@ -22,8 +22,8 @@
           });
         });
         $('.sw').live('click', function(event) {
-          event.preventDefault();
-          $('#searchBox').val($(this).val());
+          var word = $(this).text(); 
+          $('#searchBox').val(word);
           $('#searchButton').click();
         })
         document.addEventListener("deviceready", onDeviceReady, false);
